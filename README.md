@@ -1,3 +1,5 @@
+📄 **DOI officiel** : [10.5281/zenodo.15384886](https://doi.org/10.5281/zenodo.15384886)  
+📦 Dépôt Zenodo : [Compression Critique – Snapshot v0.1](https://doi.org/10.5281/zenodo.15384886)
 
 # Compression_Decompression_Critique_Antoine_Sekhi – Snapshot v0.1 (11 mai 2025)
 
