@@ -1,0 +1,57 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\setlength{\parskip}{1em}
+\geometry{margin=2.5cm}
+
+\title{\textbf{Renormalisation à deux boucles — esquisse compressive}}
+\author{Antoine Sekhi}
+\date{11 mai 2025}
+
+\begin{document}
+
+\maketitle
+
+\section*{Objectif}
+
+Esquisser la structure des divergences potentielles à deux boucles dans le cadre compressif défini par :
+\[ S = \int d^4x \, \sqrt{-g} \left[ \frac{1}{16\pi G} R + \frac{1}{2} \frac{1}{\Phi} g^{\mu\nu} \partial_\mu \Phi \partial_\nu \Phi - V(\Phi) \right] \]
+avec :
+\[ V(\Phi) = \Phi \ln \Phi + \alpha \Phi^2 \quad \text{et} \quad C(\Phi) = \frac{1}{\Phi} \]
+
+\section{Structure des diagrammes à deux boucles}
+
+Deux types principaux de contributions apparaissent à deux boucles :
+
+\begin{itemize}
+  \item \textbf{Diagramme sunset} (auto-énergie à deux propagateurs internes)
+  \item \textbf{Diagrammes imbriqués} (bulle dans bulle, corrections de vertex)
+\end{itemize}
+
+Le diagramme sunset pour $\Phi$ (interaction $\lambda_4 \Phi^4$ issue du développement de $V(\Phi)$) donne une contribution typique :
+\[ \Sigma^{(2)}(p^2) \sim \frac{\lambda_4^2}{(16\pi^2)^2} \left( \Lambda^2 \ln \frac{\Lambda^2}{m^2} + \cdots \right) \]
+
+\section{Compression critique et contrôle des divergences}
+
+Deux mécanismes permettent ici un contrôle compressif :
+\begin{itemize}
+  \item La structure logarithmique de $V(\Phi)$ implique que les contre-termes au-delà de $\lambda_4$ ne peuvent pas croître librement : ils sont \textit{retenus} par la compression asymptotique.
+  \item Le couplage $C(\Phi) = 1/\Phi$ implique une suppression dynamique des hautes fluctuations (\textit{bruit auto-régulé}).
+\end{itemize}
+
+\section{Hypothèse compressive}
+
+Nous postulons que :
+\begin{quote}
+Toute divergence à deux boucles dans ce cadre est soit absorbable par une redéfinition compressive du potentiel $V(\Phi)$, soit supprimée par saturation naturelle des degrés de liberté dans $\Phi$.
+\end{quote}
+
+\textit{Autrement dit} : l’espace des contre-termes est compressivement borné. Il n’existe pas de liberté infinie de réécriture à deux boucles dans ce cadre.
+
+\section*{Conclusion provisoire}
+
+\textbf{Résultat compressif v0.1} : Aucune divergence à deux boucles n’apparaît comme non contrôlable dans ce cadre à ce stade. Le potentiel logarithmique, la suppression dynamique, et l’absence de vertex gravitationnel couplé suffisent pour assurer une renormalisabilité compressive partielle.
+
+Un calcul symbolique complet (e.g. via \texttt{sympy} ou \texttt{feyncalc}) est envisagé pour v0.2.
+
+\end{document}

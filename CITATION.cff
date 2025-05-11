@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+title: "Compression Critique – Snapshot v0.1"
+authors:
+  - family-names: Sekhi
+    given-names: Antoine
+    orcid: https://orcid.org/0000-0000-0000-0000
+    affiliation: "Indépendant"
+date-released: 2025-05-11
+version: 0.1
+license: CC-BY-4.0
+doi: 10.5281/zenodo.TODO
+
+message: "Veuillez citer ce travail comme : Sekhi, A. (2025). Compression Critique – Snapshot v0.1. https://doi.org/10.5281/zenodo.TODO"
